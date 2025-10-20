@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #333;
+      text-align: center;
+    }
+    h1 {
+      color: #00b3b3;
+      font-size: 2.2em;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    .name {
+      color: #00b3b3;
+      font-weight: bold;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      background: #00b3b3;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    a:hover {
+      background: #009999;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Thank You!</h1>
+  <p>Thank you, <span class="name" id="userName">Friend</span> — your message has been sent successfully.</p>
+  <a href="index.html">Back to Home</a>
+
+  <script>
+    // Optional: Capture name from URL if passed by FormSubmit
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name");
+    if (name) {
+      document.getElementById("userName").textContent = name;
+    }
+  </script>
+</body>
+</html>

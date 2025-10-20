@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">It's<span> Me Ashar</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="toggle-btn">
+        <a href="Resume - Mohammed Ashar (AI).pdf" download class="btn-resume">Download Resume</a>
+      </div>
+    </div>
+    
+</nav>
+
+  </header>
+
+  <!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-container">
+    <!-- Left Side Image -->
+    <div class="hero-image">
+      <img src="Ashar_port.jpg" alt="Your Photo">
+    </div>
+    
+    
+    <!-- Right Side Content -->
+    <div class="hero-content">
+
+      <h1>Hi, I'm <span>Mohammed Ashar</span></h1>
+      <h2 class="typing-text">A <span id="typed-text"></span></h2>
+      <p>Passionate about building beautiful and functional web experiences.</p>
+      <button onclick="scrollToSection('projects')">View My Work</button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- About Section -->
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      I’m <b>Mohammed Ashar</b>, a tech enthusiast and developer with skills in <b>Python, Web Development, and Machine Learning</b>.
+I have hands-on experience in building projects such as object detection systems, mobile price prediction using Streamlit, and <b>IoT-based automation</b>.
+I aim to grow as a software engineer by constantly learning and working on innovative projects.
+      I love to explore new technologies and apply them to solve real-world problems. My goal is to create impactful solutions that enhance user experiences and drive efficiency.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2 data-aos="fade-up">My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" data-aos="zoom-in">
+        <img src="Iot pro.jpg" alt="IOT Project">
+        <h3>Object Detection Using ULTRA-SONIC Sensor</h3>
+        <p>An Ultrasonic Sensor System for Object Detect on and Distance Measurement LED Status
+Indicators with Raspberry Pi Pico</p>
+      </div>
+      <div class="project-card" data-aos="zoom-in">
+        <img src="ai_stock.png" alt="AI Project">
+        <h3>Supermarket Stock Detection using Deep Learning</h3>
+        <p>Built a YOLO-based object detection model to identify missing products and track stock levels.
+Integrated with Streamlit for an interactive dashboard to upload images or live camera for detection.</p>
+      </div>
+      <div class="project-card" data-aos="zoom-in">
+        <img src="https://source.unsplash.com/400x300/?machinelearning" alt="AI Project">
+        <h3>AI Stock Detector</h3>
+        <p>Deep learning system for supermarket stock detection.</p>
+      </div>
+      <div class="project-card" data-aos="zoom-in">
+        <img src="mobile_price.png" alt="Weather App">
+        <h3>Streamlit project</h3>
+        <p>A mobile price prediction web app built with Streamlit that uses machine learning to predict a phone's price range based on its specifications.
+</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+<section id="certifications" data-aos="fade-up">
+  <h2>Certifications</h2>
+  <div class="certification-container">
+    <div class="certificate-card" data-aos="zoom-in">
+      <img src="Nptel_cert.png" alt="NPTEL-Certificate">
+      <h3>NPTEL-Certificate</h3>
+    </div>
+
+    <div class="certificate-card" data-aos="zoom-in">
+      <img src="AI_cert.png" alt="AI Certificate">
+      <h3>AI certificate</h3>
+    </div>
+
+    <div class="certificate-card" data-aos="zoom-in">
+      <img src="SQL_cert.png" alt="SQL Certificate">
+      <h3>SQL certificate</h3>
+    </div>
+
+    <div class="certificate-card" data-aos="zoom-in">
+      <img src="Network_cert.png" alt="Cryptography and Network Certificate">
+      <h3>Network Certificate</h3>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" data-aos="fade-up" action="mailto:your-mohammedasharan35@gmail.com" method="post" enctype="text/plain">
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/mohammedasharan35@gmail.com" method="POST" class="contact">
+  <input type="text" name="name" class="form-input name-input" placeholder="Your Name" required>
+  <input type="email" name="email" class="form-input email-input" placeholder="Your Email" required>
+  <textarea name="message" class="form-textarea message-input" placeholder="Your Message" required></textarea>
+  <button type="submit" class="submit-btn">Send Message</button>
+
+  <!-- Hidden settings -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html">
+</form>
+
+  </section>
+
+  <!-- Footer -->
+  <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h2>Mohammed Ashar</h2>
+      <p>AI Developer</p>
+      <h3>Why work with me?</h3>
+      <p>
+        I believe great projects come from great teamwork and constant learning.  
+I listen carefully, adapt quickly, and always aim to deliver results that inspire growth and innovation.
+      </p>
+    </div>
+
+    <div class="footer-contact" align="center">
+      <h3>Get in Touch</h3>
+      <p>Email: <a href="mailto:mohammedasharan35@gmail.com">mohammedasharan35@gmail.com</a></p>
+      <p>Phone: +91 9092317008</p>
+      <!-- Social Icons -->
+<div class="social-icons">
+  <a href="https://github.com/mohammedashar35" target="_blank" title="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://linkedin.com/in/mohammed-ashar2003/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+</div>
+
+    </div>
+
+    <div class="footer-links" align="center">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Mohammed Ashar. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- Font Awesome for Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+  <script src="script.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+</body>
+</html>
