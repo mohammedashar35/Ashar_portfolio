@@ -536,7 +536,7 @@ body.dark .certificate-card {
   cursor: pointer;
 }
 
-/* Mobile nav links */
+/* Mobile nav links 
 @media (max-width: 768px) {
   nav ul.nav-links {
     position: fixed;
@@ -562,6 +562,48 @@ body.dark .certificate-card {
   }
 
   .nav-toggle { display: block; }
+}
+*/
+/* ===== Mobile nav links (LEFT SIDE SLIDE) ===== */
+@media (max-width: 768px) {
+  nav ul.nav-links {
+    position: fixed;
+    top: 70px;              /* navbar height */
+    left: -260px;           /* hidden to left */
+    width: 240px;
+    height: calc(100vh - 70px);
+    background: var(--secondary-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 20px;
+    gap: 20px;
+
+    transition: left 0.3s ease;   /* ✅ ONLY left */
+    z-index: 1500;
+  }
+
+  nav ul.nav-links li {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  nav ul.nav-links a {
+    width: 100%;
+    padding: 10px 12px;
+    display: block;
+  }
+
+  /* OPEN STATE */
+  nav ul.nav-links.nav-open {
+    left: 0;               /* ✅ slide in from LEFT */
+  }
+
+  .nav-toggle {
+    display: block;
+  }
 }
 
 /* Hero adjustments */
