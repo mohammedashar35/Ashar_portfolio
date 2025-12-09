@@ -38,23 +38,35 @@ function scrollToSection(sectionId) {
 function toggleTheme() {
   document.body.classList.toggle("dark");
 }
+// contact.js
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+  const messageBox = document.getElementById("formMessage");
 
-// Contact Form
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+  if (!form) return;
 
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let message = document.getElementById("message").value;
+  form.addEventListener("submit", function () {
 
-  if (name && email && message) {
-    document.getElementById("formMessage").innerText = `Thank you, ${name}! Your message has been sent.`;
-    this.reset();
-  } else {
-    document.getElementById("formMessage").innerText = "Please fill out all fields.";
-  }
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
 
+    if (!name || !email || !message) {
+      messageBox.style.color = "red";
+      messageBox.innerText = "Please fill out all fields.";
+      return;
+    }
+
+    messageBox.style.color = "green";
+    messageBox.innerText = `Thank you, ${name}! Redirecting... ✅`;
+
+    /* ❗IMPORTANT:
+       DO NOT use e.preventDefault()
+       Let FormSubmit handle redirect */
+  });
 });
+
+
 // Hamburger menu toggle
 const navToggle = document.getElementById("navToggle");
 const navLinks = document.getElementById("navLinks");
@@ -85,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
 
 
 
