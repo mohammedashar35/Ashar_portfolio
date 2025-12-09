@@ -55,6 +55,21 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   }
 
 });
+// Hamburger menu toggle
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.getElementById("navLinks");
+
+navToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("nav-open");
+});
+
+// Close nav when clicking a link (optional)
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("nav-open");
+  });
+});
+
 
 
 
