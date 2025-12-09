@@ -58,7 +58,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 // ===== Mobile nav toggle =====
 const navToggle = document.createElement("div");
 navToggle.classList.add("nav-toggle");
-navToggle.innerHTML = '<i class="fa fa-bars"></i>';
+navToggle.innerHTML = '<i class="fas fa-bars"></i>'; // updated for FA6
 document.querySelector("nav").prepend(navToggle);
 
 const navLinks = document.querySelector("nav ul.nav-links");
@@ -73,6 +73,7 @@ document.querySelectorAll("nav ul.nav-links li a").forEach(link => {
     navLinks.classList.remove("nav-open");
   });
 });
+
 
 
 
