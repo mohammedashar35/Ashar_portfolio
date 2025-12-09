@@ -53,4 +53,23 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   } else {
     document.getElementById("formMessage").innerText = "Please fill out all fields.";
   }
+
+});
+// ===== Mobile nav toggle =====
+const navToggle = document.createElement("div");
+navToggle.classList.add("nav-toggle");
+navToggle.innerHTML = '<i class="fa fa-bars"></i>';
+document.querySelector("nav").prepend(navToggle);
+
+const navLinks = document.querySelector("nav ul.nav-links");
+
+navToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("nav-open");
+});
+
+// Close nav when a link is clicked
+document.querySelectorAll("nav ul.nav-links li a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("nav-open");
+  });
 });
