@@ -29,7 +29,7 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar 
+/* Navbar*/
 header {
   position: fixed;
   top: 0;
@@ -77,7 +77,6 @@ nav {
   font-size: 1.3rem;
   color: white;
 }
-*/
 
 /* Hero Section */
 .hero {
@@ -697,6 +696,7 @@ nav {
     width: 220px;
   }
 }
+
 
 
 
