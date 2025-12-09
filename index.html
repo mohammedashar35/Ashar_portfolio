@@ -189,6 +189,23 @@ I listen carefully, adapt quickly, and always aim to deliver results that inspir
 
 <!-- Font Awesome for Icons -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navToggle = document.getElementById("navToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    if (!navToggle || !navLinks) {
+      console.log("Navbar elements missing ❌");
+      return;
+    }
+
+    navToggle.addEventListener("click", function () {
+      navLinks.classList.toggle("nav-open");
+      console.log("Hamburger clicked ✅");
+    });
+  });
+</script>
+
 
 
   <script src="script.js"></script>
@@ -198,6 +215,7 @@ I listen carefully, adapt quickly, and always aim to deliver results that inspir
 </body>
 
 </html>
+
 
 
 
