@@ -55,11 +55,14 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   }
 
 });
-// ===== Mobile nav toggle =====
+// ===== Mobile nav toggle (left of logo) =====
 const navToggle = document.createElement("div");
 navToggle.classList.add("nav-toggle");
-navToggle.innerHTML = '<i class="fas fa-bars"></i>'; // updated for FA6
-document.querySelector("nav").prepend(navToggle);
+navToggle.innerHTML = '<i class="fas fa-bars"></i>';
+
+// Add the toggle **before the logo** so it's on the left
+const logo = document.querySelector("nav .logo");
+logo.parentNode.insertBefore(navToggle, logo);
 
 const navLinks = document.querySelector("nav ul.nav-links");
 
@@ -73,6 +76,8 @@ document.querySelectorAll("nav ul.nav-links li a").forEach(link => {
     navLinks.classList.remove("nav-open");
   });
 });
+
+
 
 
 
