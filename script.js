@@ -55,7 +55,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   }
 
 });
-/* Hamburger menu toggle
+// Hamburger menu toggle
 const navToggle = document.getElementById("navToggle");
 const navLinks = document.getElementById("navLinks");
 
@@ -63,13 +63,13 @@ navToggle.addEventListener("click", () => {
   navLinks.classList.toggle("nav-open");
 });
 
- Close nav when clicking a link (optional)
+//Close nav when clicking a link (optional)
 document.querySelectorAll(".nav-links a").forEach(link => {
   link.addEventListener("click", () => {
     navLinks.classList.remove("nav-open");
   });
 });
-*/
+
 document.addEventListener("DOMContentLoaded", function () {
   const navToggle = document.querySelector(".nav-toggle");
   const navLinks = document.querySelector(".nav-links");
@@ -85,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
 
 
 
