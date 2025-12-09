@@ -57,7 +57,7 @@ nav {
   color: var(--primary-color);
 }
 
-.nav-links {
+/*.nav-links {
   list-style: none;
   display: flex;
 }
@@ -77,7 +77,7 @@ nav {
   font-size: 1.3rem;
   color: white;
 }
-
+*/
 /* Hero Section */
 .hero {
   height: 100vh;
@@ -696,6 +696,7 @@ nav {
     width: 220px;
   }
 }
+
 
 
 
