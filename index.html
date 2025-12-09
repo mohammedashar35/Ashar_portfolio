@@ -119,27 +119,43 @@ Integrated with Streamlit for an interactive dashboard to upload images or live 
 </section>
 
   <!-- Contact Section -->
-  <section id="contact" data-aos="fade-up">
+<section id="contact" data-aos="fade-up">
   <h2>Contact Me</h2>
 
   <form id="contactForm"
         action="https://formsubmit.co/mohammedasharan35@gmail.com"
-        method="POST"
-        class="contact">
+        method="POST">
 
-    <input type="text" name="name" class="form-input name-input" placeholder="Your Name" required>
-    <input type="email" name="email" class="form-input email-input" placeholder="Your Email" required>
-    <textarea name="message" class="form-textarea message-input" placeholder="Your Message" required></textarea>
+    <input type="text"
+           id="name"
+           name="name"
+           class="form-input"
+           placeholder="Your Name"
+           required>
+
+    <input type="email"
+           id="email"
+           name="email"
+           class="form-input"
+           placeholder="Your Email"
+           required>
+
+    <textarea id="message"
+              name="message"
+              class="form-textarea"
+              placeholder="Your Message"
+              required></textarea>
 
     <button type="submit" class="submit-btn">Send Message</button>
 
+    <!-- FormSubmit settings -->
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" value="thankyou.html">
   </form>
+
+  <p id="formMessage"></p>
 </section>
-
-
-  <!-- Footer -->
+ <!-- Footer -->
   <!-- Footer Section -->
 <footer class="footer">
   <div class="footer-container">
@@ -212,6 +228,7 @@ I listen carefully, adapt quickly, and always aim to deliver results that inspir
 </body>
 
 </html>
+
 
 
 
