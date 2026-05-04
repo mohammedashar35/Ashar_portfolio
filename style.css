@@ -121,6 +121,7 @@ nav {
 section {
   padding: 100px 20px;
   text-align: center;
+  width: 60px;
 }
 
 section h2 {
