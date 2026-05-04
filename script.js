@@ -1,6 +1,6 @@
 // Typing Effect
 const typedText = document.getElementById("typed-text");
-const textArray = ["Web Developer", "Python Enthusiast", "ML Explorer", "Problem Solver"];
+const textArray = ["WordPress Developer", "Python Enthusiast", "AI/ML Explorer", "Creative Problem Solver"];
 let arrayIndex = 0;
 let charIndex = 0;
 
