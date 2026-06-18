@@ -845,7 +845,164 @@ nav {
     padding: 10px;
   }
 }
+/* ===========================
+   WordPress Projects Section
+=========================== */
 
+#wordpress-projects{
+    padding:100px 20px;
+    background:#f8f9fa;
+}
+
+#wordpress-projects h2{
+    text-align:center;
+    color:#00adb5;
+    margin-bottom:50px;
+    font-size:2rem;
+}
+
+.wordpress-grid{
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+.wordpress-card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.35s;
+    display:flex;
+    flex-direction:column;
+}
+
+.wordpress-card:hover{
+    transform:translateY(-8px);
+}
+
+.wordpress-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.wordpress-content{
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
+.wordpress-content h3{
+    font-size:24px;
+    margin-bottom:15px;
+    color:#222;
+}
+
+.wordpress-content p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:20px;
+    flex:1;
+}
+
+/* Technology Tags */
+
+.project-tech{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.project-tech span{
+    background:#e8fbfc;
+    color:#00adb5;
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.project-btn{
+    display:block;
+    text-align:center;
+    border:2px solid #00adb5;
+    padding:14px;
+    border-radius:10px;
+    color:#00adb5;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.project-btn:hover{
+    background:#00adb5;
+    color:#fff;
+}
+
+/* Dark Mode */
+
+body.dark #wordpress-projects{
+    background:#111;
+}
+
+body.dark .wordpress-card{
+    background:#222;
+}
+
+body.dark .wordpress-content h3{
+    color:#fff;
+}
+
+body.dark .wordpress-content p{
+    color:#ccc;
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+    .wordpress-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .wordpress-card img{
+        height:230px;
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:576px){
+
+    #wordpress-projects{
+        padding:80px 15px;
+    }
+
+    .wordpress-card img{
+        height:200px;
+    }
+
+    .wordpress-content{
+        padding:20px;
+    }
+
+    .wordpress-content h3{
+        font-size:20px;
+    }
+
+    .project-btn{
+        width:100%;
+    }
+
+}
 
 
 
